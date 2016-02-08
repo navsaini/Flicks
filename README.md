@@ -56,8 +56,9 @@ Describe any challenges encountered while building the app.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-    
-    # Project 2 - Flicks
+##
+
+# Project 2 - Flicks
 
 Flicks is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
@@ -90,6 +91,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 Here's a walkthrough of implemented user stories:
 
 <a href="http://imgur.com/lp2RGO9"><img src="http://i.imgur.com/lp2RGO9.gif?1" title="source: imgur.com" /></a>
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
