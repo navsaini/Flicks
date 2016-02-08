@@ -17,6 +17,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     var movies: [NSDictionary]?
     var filtered:[NSDictionary]?
+    
+    var endpoint: String = ""
 
     var searchActive: Bool = false
     
@@ -36,7 +38,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         hud.show(true)
         
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-        let url = NSURL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
+        let url = NSURL(string: "https://api.themoviedb.org/3/movie/\(endpoint)?api_key=\(apiKey)")
         let request = NSURLRequest(
             URL: url!,
             cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData,
@@ -152,8 +154,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         }
         cell.titleLabel.text = title
         cell.overview.text = overview
-        
-        
         
         print("row \(indexPath.row)")
         
